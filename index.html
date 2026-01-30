@@ -1,147 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Meta Pixel Code -->
-    <script>
-        ! function(f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function() {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1430530581424688');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1430530581424688&ev=PageView&noscript=1"
-/></noscript>
-    <!-- End Meta Pixel Code -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AISHWARYA RAI</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @keyframes btnAnimation {
-            0% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.1);
-            }
-            100% {
-                transform: scale(1);
-            }
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DHANUSH RAJA</title>
 
-        .tetegrambtn {
-            background-size: 300% 300%;
-            animation: btnAnimation 2s ease infinite;
-            transition: transform 0.3s ease;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Oswald:wght@700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 
-        .hurry {
-            animation: hurry 1s linear infinite forwards;
-        }
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Open Sans',sans-serif;}
+body{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#020024,#090979,#00d4ff);
+}
+.hero{
+  width:360px;
+  border-radius:22px;
+  padding:25px 15px 18px;
+  text-align:center;
+  box-shadow:0 0 45px rgba(0,212,255,.5);
+  background:
+    linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
+    url("https://github.com/mrxsetup/hackerprediction/blob/main/hackerlogo.jpg?raw=true");
+  background-size:cover;
+  background-position:center;
+  animation: floatCard 4s ease-in-out infinite;
+}
+@keyframes floatCard{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-10px)}
+}
+.profile-picture img{
+  height:120px;width:120px;border-radius:50%;
+  border:4px solid #00d4ff;
+  object-fit:cover;
+  box-shadow:0 0 25px #00d4ff;
+  animation:pulseGlow 2.2s infinite alternate, zoomPic 4s infinite;
+}
+@keyframes pulseGlow{
+  from{box-shadow:0 0 18px #00d4ff}
+  to{box-shadow:0 0 40px #00ffff}
+}
+@keyframes zoomPic{
+  0%,100%{transform:scale(1)}
+  50%{transform:scale(1.07)}
+}
+.heading1{
+  margin-top:15px;
+  font-family:'Oswald',sans-serif;
+  color:#fff;
+  letter-spacing:1px;
+}
+.subscriber-counter{
+  margin:15px 0;
+  color:#fff;
+  font-size:22px;
+  font-weight:bold;
+}
+.button{margin:16px 0;}
+.btn{
+  display:block;
+  padding:15px;
+  border-radius:14px;
+  color:#fff;
+  font-weight:bold;
+  text-decoration:none;
+  background:linear-gradient(270deg,#00c6ff,#0072ff,#00ffcc,#ff00cc);
+  background-size:600% 600%;
+  animation:gradientMove 3.5s ease infinite, zoomBtn 1.8s infinite alternate;
+  box-shadow:0 0 22px rgba(0,198,255,.9);
+  transition:.2s;
+}
+.btn:hover{transform:scale(1.07);}
+@keyframes gradientMove{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes zoomBtn{
+  from{transform:scale(1)}
+  to{transform:scale(1.05)}
+}
+.points ul{list-style:none;margin:18px 0;color:#fff;}
+.points li{margin:8px 0;}
+.trust{color:#00ffcc;font-size:14px;}
+.urgent{color:#ffcc00;font-size:15px;margin-top:6px;}
+.ads-credit{margin-top:14px;}
+.ads-credit a{
+  display:inline-block;
+  padding:6px 12px;
+  font-size:12px;
+  color:#00ffcc;
+  text-decoration:none;
+  border:1px solid rgba(0,255,204,.6);
+  border-radius:6px;
+  background:rgba(0,0,0,.55);
+}
+.ads-credit a:hover{
+  background:rgba(0,0,0,.85);
+  box-shadow:0 0 12px rgba(0,255,204,.7);
+}
+</style>
 
-        @keyframes hurry {
-            0%,
-            100% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.1);
-            }
-        }
+<!-- META PIXEL -->
+<script>
+!function(f,b,e,v,n,t,s){
+if(f.fbq)return;n=f.fbq=function(){
+n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];
+t=b.createElement(e);t.async=!0;
+t.src=v;
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)
+}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
-        .tetegrambtn:hover {
-            transform: scale(1.2);
-        }
+fbq('init','1727954128132041');
+fbq('track','PageView');
+</script>
 
-        /* Background overlay for better text visibility */
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1727954128132041&ev=PageView&noscript=1"/>
+</noscript>
 
-        .overlay {
-            position: absolute;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.65);
-            /* Dark overlay to make text readable */
+<!-- CONVERSION API -->
+<script>
+const ACCESS_TOKEN = "EAAqHRZA7ZCtMYBQtcNqdjjNjZABJueBfBCMGgsQmPZAGbvmaKpYmtSZCSDL3uX1lxVDnZB447tsZBg3CiVmZCwZBejxWbZCJNyRqUPVeisGg6Uklw9L53OfrRUDqJejqu9YZCGZCpnVhvxYqZCuhnO95rdderzDTFqdtgotDXTWMltFkSH8sYQWGzX9W1zPLROtXYle0cEwZDZD";
+const PIXEL_ID = "1727954128132041";
+
+function sendCAPIEvent(eventName){
+  fetch(`https://graph.facebook.com/v18.0/${PIXEL_ID}/events?access_token=${ACCESS_TOKEN}`, {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({
+      data: [{
+        event_name: eventName,
+        event_time: Math.floor(Date.now()/1000),
+        action_source: "website",
+        user_data: {
+          client_user_agent: navigator.userAgent
         }
-    </style>
+      }]
+    })
+  });
+}
+
+// Auto PageView CAPI
+sendCAPIEvent("PageView");
+</script>
+
 </head>
 
-<body class="bg-gray-900 font-sans antialiased">
-    <!-- Hero Section with new full-page background -->
-    <div class="relative h-screen flex items-center justify-center bg-cover bg-center bg-fixed" style="background-image: url('https://github.com/h38331627-cloud/AISHWARYA-RAI/blob/main/aishwaryaiamge.jpg');">
-        <div class="overlay"></div>
-        <div class="relative text-center text-white max-w-2xl px-6 z-10">
-            <h1 class="neon-text">
-                AISHWARYA RAI <span class="dubai-glow">(2017)</span>
-            </h1>
-            <style>
-                .neon-text {
-                    color: #fff200;
-                    font-weight: bold;
-                    font-size: 2rem;
-                    text-align: center;
-                    margin-top: 20px;
-                    text-shadow: none;
-                    animation: none;
-                }
+<body>
 
-                .dubai-glow {
-                    color: #ffb300;
-                    text-shadow: none;
-                    animation: none;
-                }
-            </style>
-            <!-- Profile Image (same as background for consistency) -->
-            <img src="https://github.com/h38331627-cloud/AISHWARYA-RAI/blob/main/aishwaryaiamge.jpg" alt="AISHWARYA RAI Profile" class="mx-auto w-24 h-24 rounded-full mt-3 border-4 border-blue-800 shadow-lg object-cover">
-            <div class="grid place-items-center">
-                <p class="flex place-items-center gap-2 text-xl "><strong class="text-white hurry" style="text-shadow: 1px 0px rgb(10, 122, 83);">Join Now</strong> <strong id="countdown" class="text-3xl text-yellow-400 "></strong> <strong class="text-white" style="text-shadow: 1px 0px rgb(10, 122, 83);">Seconds Left</strong></p>
-            </div>
-            <div class="my-4"><span class="text-4xl text-red-600 font-bold" style="text-shadow: 1px 1px white;">Top </span> <span class="bg-gray-600 px-4 py-2 rounded">Accuracy </span> </div>
-            <div class="mt-2 space-y-2">
-                <div class=" ">
-                    <p class="text-sm font-semibold">Join Karo Enjoy Daily Cricket Prediction👇 </p>
-                </div>
-                <div class="my-10 w-full grid place-items-center">
-                    <a href="https://t.me/+Hj8UaupVc0tjZmJl">
-                        <button
-                            class="tetegrambtn px-2 py-4 rounded-lg text-sm flex gap-2 place-items-center font-bold text-white shadow-md hover:scale-105 border-b-4 border-red-500 " style="background-color: rgb(4, 251, 255);">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi bi-telegram" viewBox="0 0 16 16">
-                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
-                            </svg> 
-                            <strong class="uppercase text-red-600" style="text-shadow: 1px 1px white;" > JOIN AISHWARYA RAI TELEGRAM CHANNEL </strong>
-                        </button>
-                    </a>
-                </div>
-                <p class="text-sm uppercase font-semibold uppercase ">💸AISHWARYA RAI <br> cricket tipping KI duniya kI QUEEN 👑</p>
-            </div>
-        </div>
-    </div>
-    <script>
-        let timeLeft = 30; // Countdown start value
-        const countdownElement = document.getElementById('countdown');
-        const countdownTimer = setInterval(() => {
-            countdownElement.textContent = timeLeft; // Update the display
-            timeLeft -= 1;
-            if (timeLeft < 0) {
-                timeLeft = 30;
-            }
-        }, 1000); // Update every 1 second
-    </script>
+<div class="hero">
+
+  <div class="profile-picture">
+    <img src="https://github.com/mrxsetup/hackerprediction/blob/main/hackerlogo.jpg?raw=true">
+  </div>
+
+  <h1 class="heading1">👑 DHANUSH RAJA 👑</h1>
+
+  <div class="subscriber-counter" id="subscriber-count">0+ Members</div>
+
+  <div class="trust">✔️ 100% Free | ✔️ Trusted | ✔️ No Scam</div>
+  <div class="urgent">⏳ Join Before Match Starts</div>
+
+  <div class="button">
+    <a href="https://t.me/+MqGWTIoYgqJhZjk1" onclick="fbq('track','Lead'); sendCAPIEvent('Lead');" class="btn">
+      Join Telegram Channel <i class="fa-brands fa-telegram"></i>
+    </a>
+  </div>
+
+  <div class="points">
+    <ul>
+      <li>🏆 Accurate Predictions</li>
+      <li>🏆 Fast Updates</li>
+      <li>🏆 Trusted Source</li>
+    </ul>
+  </div>
+
+  <div class="button">
+    <a href="https://t.me/+MqGWTIoYgqJhZjk1" onclick="fbq('track','Lead'); sendCAPIEvent('Lead');" class="btn">
+      SUBSCRIBE FOR FREE <i class="fa-brands fa-telegram"></i>
+    </a>
+  </div>
+
+  <div class="ads-credit">
+    <a href="https://t.me/CAPTAIN4433" target="_blank">
+      ADS SETUP BY – @CAPTAIN4433
+    </a>
+  </div>
+
+</div>
+
+<script>
+const target = 60000;
+const duration = 2000;
+const el = document.getElementById("subscriber-count");
+let start = null;
+
+function animate(t){
+  if(!start) start = t;
+  let progress = t - start;
+  let count = Math.min(Math.floor((progress/duration)*target), target);
+  el.innerText = count.toLocaleString() + "+ Members";
+  if(count < target) requestAnimationFrame(animate);
+}
+requestAnimationFrame(animate);
+</script>
+
 </body>
-
 </html>
